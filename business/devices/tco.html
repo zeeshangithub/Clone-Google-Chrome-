@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="no-js business" data-country="us" lang="en">
+  
+<!-- Mirrored from www.google.com.pk/chrome/business/devices/tco.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Jan 2015 06:15:48 GMT -->
+<head>
+
+    <script>
+var a=location.href.match(/platform=(win8|win|mac|linux|cros)/),b=window.navigator.userAgent;document.documentElement.id=a&&a[1]||(-1<b.indexOf("Windows NT 6.2")?"win8":-1<b.indexOf("Windows")?"win":-1<b.indexOf("Mac")?"mac":-1<b.indexOf("CrOS")?"cros":"linux");
+if(-1<b.indexOf("MSIE")){var c=-1<b.indexOf("MSIE 6")?" lt-ie10 lt-ie9 lt-ie8 lt-ie7 ie6":-1<b.indexOf("MSIE 7")?" lt-ie10 lt-ie9 lt-ie8 ie7":-1<b.indexOf("MSIE 8")?" lt-ie10 lt-ie9 ie8":-1<b.indexOf("MSIE 9")?" lt-ie10 ie9":-1<b.indexOf("MSIE 10")?" ie10":"";""!==c&&(document.documentElement.className+=c)}-1<b.indexOf("Windows NT 5.1")&&(document.documentElement.className+=" winXP");
+    </script>
+    <script src="../../../../www.gstatic.com/external_hosted/modernizr/modernizr.js">
+</script>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+    <title>
+      Total Cost of Ownership Calculator for Chromebooks
+    </title>
+    <link href="https://plus.google.com/100585555255542998765" rel="publisher">
+    <link href="../../../../www.google.com/images/icons/product/chrome-32.png" rel="icon" type="image/ico">
+    <link href="https://www.google.com/chrome/business/devices/tco.html" rel="canonical">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel=
+    "stylesheet">
+    <link href="../../assets/common/css/biz-v2.min.css" rel="stylesheet">
+    <script src="../../../../www.google.com/js/gweb/analytics/autotrack.js">
+</script>
+    <script>
+new gweb.analytics.AutoTrack({
+          profile: 'UA-26908291-1'
+        });
+    </script>
+  </head>
+  <body class="tco-calc" id="grid">
+    <h1>
+      See what you can save with Chrome devices
+    </h1>
+    <p>
+      Tell us how many employees there are in your organization, and we'll estimate how much a PC
+      deployment would cost and what you could save over 3 years with Chromebooks for Business,
+      which includes:
+    </p>
+    <ul class="promo-list">
+      <li>
+        <span>Chromebooks</span>
+      </li>
+      <li>
+        <span>Chrome management console</span>
+      </li>
+      <li>
+        <span>Support</span>
+      </li>
+    </ul>
+    <h2>
+      Calculate your savings
+    </h2>
+    <form id="tco-form" name="tco-form">
+      <label for="tco-employees">How many employees are in your organization?</label> <input id=
+      "tco-employees" maxlength="8" name="tco-employees" placeholder="1" size="7" type="text"
+      value=""> <input class="button-alt" type="submit" value="Calculate">
+      <div class="hide" id="submit-error">
+        Please enter the number of employees in your organization
+      </div>
+    </form>
+    <div id="tco-results">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>
+              PC
+            </th>
+            <th class="cb">
+              Chromebook
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="label">
+              <span class="expand">Purchase price</span>
+              <p class="description">
+                This is the cost of buying a single laptop or desktop. This calculator assumes your
+                company replaces PCs every three years. (Source: NPD Group, Hall &amp; Partners)
+              </p>
+            </td>
+            <td class="pc" id="pc-hardware">
+              –
+            </td>
+            <td class="cb" id="cb-hardware">
+              –
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <span class="expand">Hardware maintenance</span>
+              <p class="description">
+                A typical warranty is 20% of the total cost of a new PC, paid upfront. This
+                calculator assumes warranties are paid in advance to cover the replacement cost of
+                a computer for three years. (Source: Google customer survey data.; NPD Group)
+              </p>
+            </td>
+            <td class="pc" id="pc-maintenance">
+              –
+            </td>
+            <td class="cb" id="cb-maintenance">
+              –
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <span class="expand">IT Software &amp; Infrastructure</span>
+              <p class="description">
+                This category includes software, servers, and other infrastructure for OS patches,
+                system updates, anti-virus protection, and backups, as well as the administrative
+                tools required to manage a single PC annually. (Source: Google customer survey
+                data.; Microsoft Intune rate card)
+              </p>
+            </td>
+            <td class="pc" id="pc-software">
+              –
+            </td>
+            <td class="cb" id="cb-software">
+              –
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <span class="expand">Management and administrative overhead</span>
+              <p class="description">
+                This category includes the personnel costs for distributing OS images and managing
+                applications for one end-user's desktop annually. (Source: Google customer survey
+                data.)
+              </p>
+            </td>
+            <td class="pc" id="pc-management">
+              –
+            </td>
+            <td class="cb" id="cb-management">
+              –
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <span class="expand">End-user Costs</span>
+              <p class="description">
+                This covers lost productivity due to setup, booting, system outages,
+                troubleshooting, and ongoing fixes for one end-user and their PC annually. (Source:
+                Google customer survey data.)
+              </p>
+            </td>
+            <td class="pc" id="pc-enduser">
+              –
+            </td>
+            <td class="cb" id="cb-enduser">
+              –
+            </td>
+          </tr>
+          <tr class="total">
+            <td class="label">
+              3 year total cost of ownership
+            </td>
+            <td class="pc" id="pc-total">
+              –
+            </td>
+            <td class="cb" id="cb-total">
+              –
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Ready to talk? Contact sales to trade up to Chromebooks today. <a class="button contact"
+      href="contact.html" target="_top">Contact Sales</a>
+    </p>
+    <p class="footnote">
+      Example calculations are provided for general informational purposes only, without any
+      implicit or explicit warranty, and do not constitute advice or opinions regarding specific
+      facts. Example calculations are based on internal Google data and publicly available
+      information.
+    </p><script src="../../assets/common/js/widget/tcocalculator-view.js">
+</script> <script>
+new chrm.widget.TcoCalculator('USD');
+
+var twisties = new gweb.ui.Twisties({
+    enableFade: true,
+    classTwisty: 'expand',
+    classCollapse: 'expand',
+    classExpand: 'collapse'
+    });
+    </script>
+  </body>
+
+<!-- Mirrored from www.google.com.pk/chrome/business/devices/tco.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Jan 2015 06:15:49 GMT -->
+</html>
